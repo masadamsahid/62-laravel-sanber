@@ -124,20 +124,45 @@
                 )
             
         */
-  function createPerson($name, $age, $aliases, $status) {
-    return array(
-      "Name" => $name,
-      "Age" => $age,
-      "Aliases" => $aliases,
-      "Status" => $status,
-    );
-  }
+
+  // function createPerson($name, $age, $aliases, $status) {
+  //   return array(
+  //     "Name" => $name,
+  //     "Age" => $age,
+  //     "Aliases" => $aliases,
+  //     "Status" => $status,
+  //   );
+  // }
 
   $people = array(
-    createPerson("Will Byers", 12, "Will the Wise", "Alive"),
-    createPerson("Mike Wheeler", 12, "Dugeon Master", "Alive"),
-    createPerson("Jim Hooper", 43, "Chief Hopper", "Deceased"),
-    createPerson("Eleven", 12, "El", "Alive")
+    // createPerson("Will Byers", 12, "Will the Wise", "Alive"),
+    // createPerson("Mike Wheeler", 12, "Dugeon Master", "Alive"),
+    // createPerson("Jim Hooper", 43, "Chief Hopper", "Deceased"),
+    // createPerson("Eleven", 12, "El", "Alive")
+    array(
+      "Name" => "Will Byers",
+      "Age" => 12,
+      "Aliases" => "Will the Wise",
+      "Status" => "Alive"
+    ),
+    array(
+      "Name" => "Mike Wheeler",
+      "Age" => 12,
+      "Aliases" => "Dugeon Master",
+      "Status" => "Alive"
+    ),
+    array(
+      "Name" => "Jim Hooper",
+      "Age" => 43,
+      "Aliases" => "Chief Hopper",
+      "Status" => "Deceased"
+    ),
+    array(
+      "Name" => "Eleven",
+      "Age" => 12,
+      "Aliases" => "El",
+      "Status" => "Alive"
+    )
   );
 
   echo "<pre>";
