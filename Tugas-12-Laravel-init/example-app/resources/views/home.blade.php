@@ -18,7 +18,7 @@
     <h3>Cara Bergabung ke SanberBook</h3>
     <ol>
         <li>Step 1</li>
-        <li>Step 2 <a href="/register">Isi Form</a></li>
+        <li>Step 2 <a href="{{ route('register') }}">Isi Form</a></li>
         <li>Step 3</li>
     </ol>
 </body>
