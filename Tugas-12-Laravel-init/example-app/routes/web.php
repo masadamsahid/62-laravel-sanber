@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CastController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +34,15 @@ Route::get('/table', function () {
 Route::get('/data-table', function () {
   return view('data-table');
 })->name('data-table');
+
+
+// Casts
+Route::get('/casts', [CastController::class,'index'])->name('casts');
+
+Route::get('/casts/create', [CastController::class,'create'])->name('casts_create');
+Route::post('/casts', [CastController::class,'store'])->name('casts_store');
+
+Route::get('/casts/{cast_id}', [CastController::class,'show'])->name('casts_show');
+Route::get('/casts/{cast_id}/edit', [CastController::class,'edit'])->name('casts_edit');
+Route::put('/casts/{cast_id}', [CastController::class,'update'])->name('casts_update');
+Route::delete('/casts/{cast_id}', [CastController::class,'delete'])->name('casts_delete');

@@ -35,6 +35,7 @@
           </p>
         </a>
       </li>
+      
       <li class="nav-item">
         <a href="#" class="nav-link">
           <i class="nav-icon fas fa-th"></i>
@@ -56,14 +57,33 @@
               <p>Data Table</p>
             </a>
           </li>
-          {{-- <li class="nav-item">
-            <a href="../../index3.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Dashboard v3</p>
-            </a>
-          </li> --}}
         </ul>
       </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fas fa-bullhorn"></i>
+          <p>
+            Casts
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <a href="{{ route('casts') }}" class="nav-link">
+              <i class="fas fa-th-list nav-icon"></i>
+              <p>Casts List</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('casts_create') }}" class="nav-link">
+              <i class="fas fa-plus nav-icon"></i>
+              <p>Create Cast</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+
       {{-- <li class="nav-item">
         <a href="#" class="nav-link">
           <i class="nav-icon fas fa-copy"></i>
